@@ -9,8 +9,4 @@ import org.springframework.context.annotation.Configuration;
 @ComponentScan("lesson.dao")
 public class PersonDaoConfig {
 
-    public PersonDao personDao(){
-        return new PersonDaoSimple();
-    }
-
 }
