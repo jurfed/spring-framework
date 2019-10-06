@@ -17,5 +17,6 @@ public class Main {
         PersonService s = context.getBean(PersonService.class);
         Person person = s.getByName("Petro");
         System.out.println(person);
+
     }
 }
