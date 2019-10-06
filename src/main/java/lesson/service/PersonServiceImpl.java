@@ -2,7 +2,6 @@ package lesson.service;
 
 
 import lesson.dao.PersonDao;
-import lesson.dao.PersonDaoSimple;
 import lesson.domain.Person;
 
 public class PersonServiceImpl implements PersonService {
