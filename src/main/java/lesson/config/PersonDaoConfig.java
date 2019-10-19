@@ -1,7 +1,5 @@
-package lesson.configuration;
+package lesson.config;
 
-import lesson.dao.PersonDao;
-import lesson.dao.PersonDaoSimple;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 

@@ -1,8 +1,7 @@
 package lesson;
 
-import lesson.configuration.PersonDaoConfig;
-import lesson.configuration.PersonServiceConfig;
-import lesson.dao.PersonDao;
+import lesson.config.PersonDaoConfig;
+import lesson.config.PersonServiceConfig;
 import lesson.domain.Person;
 import lesson.service.PersonService;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
