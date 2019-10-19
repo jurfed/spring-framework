@@ -4,8 +4,16 @@ package lesson.service;
 import lesson.dao.PersonDao;
 import lesson.domain.Person;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 
 public class PersonServiceImpl implements PersonService {
+
+
+    String persinName;
+
+    public PersonServiceImpl(String name){
+        persinName = name;
+    }
 
     // @Autowired//- аналог inject. присвоит созданный объект без сеттера и конструктора
     private PersonDao dao;
@@ -21,12 +29,13 @@ public class PersonServiceImpl implements PersonService {
     }*/
 
     @Autowired //Autowired - аналог inject
-    public void setDao(PersonDao dao) {
+    public void setDao(@Qualifier("personDaoId") PersonDao dao) {
         this.dao = dao;
     }
 
     public Person getByName(String name) {
-        return dao.findByName(name);
+//        return dao.findByName(name);
+        return dao.findByName(persinName);
     }
 }
 

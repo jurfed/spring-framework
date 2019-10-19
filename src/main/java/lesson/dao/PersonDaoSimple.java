@@ -11,14 +11,14 @@ import org.springframework.stereotype.Service;
 
 //@Component
 //@Repository("personDaoId")
-@Service
+@Service("personDaoId")
 //@Controller
 public class PersonDaoSimple implements PersonDao {
 
     String str="123";
 
     public PersonDaoSimple() {
-        System.out.println("constructor PersonDaoSimple");
+        System.out.println("constructor PersonDaoSimple 1 " +str);
     }
 
     @Override
