@@ -11,11 +11,15 @@ import org.springframework.stereotype.Service;
 
 //@Component
 //@Repository("personDaoId")
-@Service("personDaoId")
+@Service("personDaoId1")
 //@Controller
 public class PersonDaoSimple implements PersonDao {
 
     String str="123";
+
+    public String getStr() {
+        return str;
+    }
 
     public PersonDaoSimple() {
         System.out.println("constructor PersonDaoSimple 1 " +str);

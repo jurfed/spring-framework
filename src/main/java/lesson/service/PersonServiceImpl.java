@@ -29,8 +29,10 @@ public class PersonServiceImpl implements PersonService {
     }*/
 
     @Autowired //Autowired - аналог inject
-    public void setDao(@Qualifier("personDaoId") PersonDao dao) {
+//    public void setDao(@Qualifier("personDaoId1") PersonDao dao) {
+    public void setDao(@Qualifier("personDaoId2") PersonDao dao) {
         this.dao = dao;
+        System.out.println(dao.getStr());
     }
 
     public Person getByName(String name) {
